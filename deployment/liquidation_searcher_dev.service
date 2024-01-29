@@ -1,0 +1,20 @@
+[Unit]
+Description=Liquidation Searcher
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+Type=simple
+# Disable Python's buffering of STDOUT and STDERR, so that output from the
+# service shows up immediately in systemd's logs
+Environment=PYTHONUNBUFFERED=1
+Environment=ORDERLY_KEY=<input yours>
+Environment=ORDERLY_SECRET=<input yours>
+Environment=VIRTUAL_ENV=/<path-to>/liquidation-searcher/.venv
+ExecStart=/<path-to>/liquidation-searcher/.venv/bin/python src/liquidation_searcher/main.py -c conf/dev.yml
+WorkingDirectory=/path-to/liquidation-searcher
+Restart=always
+User=<your-user-name>
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+app:
+  level: "INFO"
+  port: 8088
+orderly:
+  account_id: '0x4546c076e1d6ae0013195316c0c7b405699c839bb760a42f41005103134dcf3f'
+  rest_endpoint: 'https://api-evm.orderly.network'
+  ws_public_endpoint: 'wss://ws-evm.orderly.network'
+  ws_private_endpoint: 'wss://ws-private-evm.orderly.network'
+  max_notional: 1100
+  liquidation_symbols: ['PERP_ARB_USDC', 'PERP_BTC_USDC', 'PERP_ETH_USDC', 'PERP_SOL_USDC', 'PERP_TIA_USDC']

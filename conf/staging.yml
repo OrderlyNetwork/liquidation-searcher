@@ -1,0 +1,10 @@
+app:
+  level: "INFO"
+  port: 8088
+orderly:
+  account_id: '0x39f80501b0c86b13dab33bf0a4a7639dfc87d8143ec6b97a713b2ceda15cd651'
+  rest_endpoint: 'https://testnet-api-evm.orderly.org'
+  ws_public_endpoint: 'wss://testnet-ws-evm.orderly.network/ws/stream/'
+  ws_private_endpoint: 'wss://testnet-ws-private-evm.orderly.network/v2/ws/private/stream/'
+  max_notional: 11000
+  liquidation_symbols: ['PERP_APT_USDC', 'PERP_ARB_USDC', 'PERP_BCH_USDC', 'PERP_BNB_USDC', 'PERP_BTC_USDC', 'PERP_ETH_USDC', 'PERP_LINK_USDC', 'PERP_MATIC_USDC', 'PERP_OP_USDC', 'PERP_SOL_USDC', 'PERP_SUI_USDC', 'PERP_TIA_USDC', 'PERP_WOO_USDC', 'PERP_XRP_USDC']

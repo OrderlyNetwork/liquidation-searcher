@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "liquidation-searcher"
+version = "0.1.0"
+description = ""
+authors = ["Akagi201 <akagi201@gmail.com>"]
+readme = "README.md"
+packages = [{include = "liquidation_searcher", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyyaml = "^6.0.1"
+ccxt = "^4.2.25"
+orderly-sdk = "0.2.2"
+types-pyyaml = "^6.0.12.12"
+aiohttp = "^3.9.2"
+loguru = "^0.7.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+ruff = "^0.1.14"
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

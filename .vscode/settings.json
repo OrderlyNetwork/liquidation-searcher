@@ -1,0 +1,18 @@
+{
+  // Editor
+  "editor.tabSize": 2,
+  // Python related basics
+  "terminal.integrated.env.osx": {
+    "PYTHONPATH": "${workspaceFolder}"
+  },
+  "python.languageServer": "Pylance",
+  // Enable pylance
+  "python.analysis.typeCheckingMode": "basic",
+
+  // Jupyter Notebooks
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  // Tests: be sure to create __init__.py in tests folder
+  "python.testing.pytestArgs": ["./tests"],
+  "python.testing.pytestEnabled": true,
+  "python.analysis.extraPaths": ["${workspaceFolder}/src/liquid_searcher"]
+}
