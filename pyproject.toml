@@ -9,14 +9,14 @@ packages = [{include = "liquidation_searcher", from = "src"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 pyyaml = "^6.0.1"
-ccxt = "^4.2.48"
-orderly-sdk = "0.2.3"
+ccxt = "^4.2.64"
+orderly-sdk = "0.2.4"
 types-pyyaml = "^6.0.12.12"
 aiohttp = "^3.9.3"
 loguru = "^0.7.2"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.2.2"
+ruff = "^0.3.1"
 mypy = "^1.8.0"
 
 [build-system]
