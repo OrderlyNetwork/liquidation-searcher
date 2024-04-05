@@ -1,7 +1,7 @@
 import asyncio
 from typing import List
 
-from liquidation_searcher.types import Collector, Executor, Strategy
+from liquidation_searcher.engine_types import Collector, Executor, Strategy
 from liquidation_searcher.utils.log import logger
 
 

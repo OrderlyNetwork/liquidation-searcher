@@ -1,6 +1,11 @@
 from typing import Set
 
-from liquidation_searcher.types import ActionType, EventType, LiquidationType, Strategy
+from liquidation_searcher.engine_types import (
+    ActionType,
+    EventType,
+    LiquidationType,
+    Strategy,
+)
 from liquidation_searcher.utils.log import logger
 
 

@@ -4,7 +4,7 @@ from typing import Any, Dict, List, Tuple
 
 from orderly_sdk.rest import AsyncClient
 
-from liquidation_searcher.types import ActionType, Executor, LiquidationType
+from liquidation_searcher.engine_types import ActionType, Executor, LiquidationType
 from liquidation_searcher.utils.log import logger
 
 

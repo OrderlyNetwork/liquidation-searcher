@@ -3,7 +3,7 @@ from typing import Set
 
 from orderly_sdk.rest import AsyncClient
 
-from liquidation_searcher.types import Collector, EventType
+from liquidation_searcher.engine_types import Collector, EventType
 from liquidation_searcher.utils.event_loop import get_loop
 from liquidation_searcher.utils.log import logger
 
